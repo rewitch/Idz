@@ -1,0 +1,487 @@
+/* Arial Regular */
+@font-face {
+    font-family: 'Arial Regular';
+    src: url('../fonts/ArialMT.eot');
+    src: url('../fonts/ArialMT.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/ArialMT.woff') format('woff'),
+    url('../fonts/ArialMT.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+html {
+        box-sizing: border-box;
+}
+*, *::before, ::after{
+    box-sizing: inherit;
+}
+
+body{
+    background-color: #FAEDD4;
+    margin: 0 auto;
+    width: 1440px;
+    font-family: 'Arial Regular';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: normal;
+    color: #FB3B2D;
+}
+
+.leftcontainer{
+    width: 1200px;
+    height: 100px;
+    float: left;
+}
+
+.rightcontainer{
+    margin-left:1200px;
+
+}
+
+/* Style to rightcontainer */
+
+.burger {
+    display: flex; /* Flex-контейнер */
+    flex-direction: row; /* Горизонтальное направление */
+    width: 240px;
+    height: 800px;
+    background-color: #eeeeee; /* Фон панели */
+}
+
+.block {
+    flex: 1; /* Равномерное распределение ширины */
+    display: flex;
+    justify-content: center; /* Центровка текста по горизонтали */
+    align-items: center; /* Центровка текста по вертикали */
+    font-size: 24px;
+    color: black;
+    writing-mode: vertical-rl;
+}
+
+.block-1 {
+    background-color: #8EA6DB; /* Цвет первого блока */
+}
+
+.block-2 {
+    background-color: #F4A300; /* Цвет второго блока */
+}
+
+.block-3 {
+    background-color: #FF6F61; /* Цвет третьего блока */
+}
+
+
+
+/* Style to rightcontainer */
+
+.wrapper{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Header styles start */
+.header{
+    background-color: #FAEDD4;
+    width: 1200px;
+    position: fixed;
+    border-bottom: 2px solid #FB3B2D;
+    z-index: 1;
+}
+
+.header_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 45px;
+    margin-bottom: 23px;
+}
+
+.header_logo{
+    margin-right: 158px;
+}
+
+.header_list{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 120px;
+}
+
+.header_item{
+    margin-right: 6px;
+}
+.header_item:last-child{
+    margin-right: 0;
+}
+
+.header_lang{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.lang_item{
+    margin-right: 21px;
+}
+.lang_item:last-child{
+    margin-right: 0;
+}
+
+.lang_link{
+    font-size: 19px;
+    line-height: 50px;
+    color: #FB3B2D;
+    text-decoration: none;
+}
+/* Header styles end */
+
+
+
+/* Intro styles start */
+.intro{
+    margin-top: 152px;
+    background-color: #FB3B2D;
+    height: 290px;
+}
+
+.intro_block{
+    padding-top: 28px;
+    text-align: center;
+}
+
+.intro_title{
+    font-size: 35px;
+    line-height: 151%;
+    color: #FAEDD4;
+    padding-bottom: 84px;
+}
+
+.intro_button{
+    height: 28px;
+    width: 251px;
+    background-color: #FAEDD4;
+    border: 0;
+    border-radius: 0;
+    font-size: 20px;
+    line-height: 0%;
+    color: #fb3b2d;
+}
+/* Intro styles end */
+
+
+
+/* Discovery styles start */
+.discovery{
+    margin-top: 2px;
+    border-top: 2px solid #FB3B2D;
+    width: 1200px;
+}
+.discovery-pic{
+    float: right;
+}
+
+.discovery_div{
+
+    width: 719px;
+    border-right: 2px solid #FB3B2D;
+}
+
+.discovery_title{
+    font-size: 65px;
+    line-height: 100%;
+    padding-top: 184px;
+    padding-bottom: 44px;
+    padding-left: 50px;
+    border-bottom: 2px solid #FB3B2D;
+}
+
+.discovery_sub-title{
+    padding-left: 50px;
+    margin-top: 32px;
+    padding-bottom: 26px;
+    font-size: 22px;
+    line-height: 150%;
+    border-bottom: 2px solid #FB3B2D;
+}
+
+.discovery_button{
+    margin-top: 2px;
+    height: 112px;
+    width: 719px;
+    background-color: #fb3b2d;
+    border: 0;
+    border-radius: 0;
+    font-size: 37px;
+    line-height: 0%;
+    color: #FAEDD4;
+}
+/* Discovery styles end */
+
+
+
+/* Image styles start */
+.img_block{
+    margin-top: 2px;
+    height: 960px;
+}
+/* Image styles end */
+
+
+
+/* Stats styles start */
+.title{
+margin-bottom: 85px;
+}
+
+.stats_title{
+    padding-left: 50px;
+    padding-top: 26px;
+    padding-bottom: 44px;
+    font-size: 55px;
+    line-height: 120%;
+    border-top: 2px solid #FB3B2D;
+    border-bottom: 2px solid #FB3B2D;
+}
+
+.stats_cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.stats_card{
+    margin: 0 auto;
+    height: 315px;
+    width: 363px;
+    position: relative;
+}
+
+.stats_card-pic{
+    padding-bottom: 120px;
+    position: absolute;
+    bottom: 0;
+}
+
+.stats_card-title{
+    font-size: 30px;
+    line-height: 117%;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+}
+
+.stats_card-title1{
+    font-size: 30px;
+    line-height: 117%;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 25px;
+}
+
+.stats_card-title2{
+    font-size: 30px;
+    line-height: 117%;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 20px;
+}
+/* Stats styles end */
+
+/* Line and text */
+.info-card {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    gap: 87px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 120px;
+    padding-right: 44px;
+    padding-left: 44px;
+    background: #fb3b2d;
+ }
+ 
+ .majestic-text-block {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    width: 169px;
+    padding: 0;
+    margin: 0;
+    font: 400 40px Arial;
+    color: #faedd4;
+    text-align: center;
+ }
+ 
+ /* Line and text */
+
+
+
+ .restaurant-info-container {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    padding-right: 74px;
+    padding-left: 74px;
+    margin-top: 47px;
+ }
+ 
+ .primary-content-container {
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+ }
+ 
+ .info-container {
+    flex: 0 0 auto;
+ }
+ 
+ .title-text-block {
+    padding: 0;
+    margin: 0;
+    font: 400 22px/22px Arial;
+    color: #fb3b2d;
+ }
+ 
+ .street-food-intro-container {
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 36px;
+ }
+ 
+ .vibrant-text {
+    padding: 0;
+    margin: 0;
+    font: 400 22px Arial;
+    color: #fb3b2d;
+    white-space: pre-wrap;
+ }
+ 
+ .digital-food-court-layout {
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-left: 128px;
+ }
+ 
+ .digital-food-court-details {
+    margin-top: 36px;
+ }
+ 
+ .street-food-layout {
+    box-sizing: border-box;
+    width: 100%;
+ }
+ 
+ .address-title-style {
+    padding: 0;
+    margin: 0;
+    font: 400 22px Arial;
+    color: #fb3b2d;
+ }
+ 
+ .digital-food-court-message {
+    box-sizing: border-box;
+    max-width: 191px;
+    padding: 0;
+    margin: 0;
+    margin-top: 2px;
+    font: 400 22px/33px Arial;
+    color: #fb3b2d;
+    text-align: left;
+ }
+ 
+ .restaurant-info-text-container {
+    margin-top: 31px;
+ }
+ 
+ .corporate-info-container {
+    flex: 0 0 auto;
+    margin-left: 51px;
+ }
+ 
+ .text-right-padding {
+    padding-right: 20.04px;
+ }
+ 
+ .socials-container {
+    flex: 0 0 auto;
+    margin-left: 163px;
+ }
+ 
+ .social-media-list {
+    box-sizing: border-box;
+    margin-top: 36px;
+ }
+ 
+ .footer-text-info {
+    flex: 0 0 auto;
+    align-self: flex-end;
+    padding: 0;
+    padding-bottom: 19px;
+    margin: 0;
+    font: 400 10px Roboto, sans-serif;
+    color: #e4e4e4;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+ }
+ .block {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: black;
+    text-decoration: none; /* Убирает подчеркивание */
+    writing-mode: vertical-rl;
+}
+
+.block-1 {
+    background-color: #8EA6DB; /* Цвет первого блока */
+}
+
+.block-2 {
+    background-color: #F4A300; /* Цвет второго блока */
+}
+
+.block-3 {
+    background-color: #FF6F61; /* Цвет третьего блока */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+  .custom-link {
+    text-decoration: none;
+    color: #FB3B2D /* Установить свой цвет текста */
+  }
+    a {
+      text-decoration: none;
+    }
+    .img_block img {
+        object-fit: cover;
+        display: block;
+        transition: transform 0.3s ease; 
+    }
+    
+    .img_block:hover img {
+        transform: scale(0.9); 
+    }
+
+    .stats_card-pic img {
+        object-fit: cover;
+        display: block;
+        transition: transform 0.3s ease; 
+    }
+
+    .stats_card-pic:hover img {
+        transform: scale(0.9); 
+    }
